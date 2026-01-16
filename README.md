@@ -63,11 +63,11 @@ To run this project locally:
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/ayushdalvi/volyx-landing-page.git
+   git clone https://github.com/ayushdalvi/volyx.git
    ```
 2. **Navigate to the folder:**
    ```bash
-   cd volyx-landing-page
+   cd volyx
    ```
 3. **Open `index.html`** in your favorite browser.
 

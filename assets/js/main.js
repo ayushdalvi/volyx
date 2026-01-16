@@ -124,6 +124,7 @@ sr.reveal(`.about__data, .offer__img`, { origin: 'right' })
 sr.reveal(`.features__map`, { delay: 600, origin: 'bottom' })
 sr.reveal(`.features__card`, { interval: 300 })
 sr.reveal(`.featured__card, .logos__content, .footer__content`, { interval: 100 })
+<<<<<<< HEAD
 /*=============== PLATFORM REDIRECT & POPUP ===============*/
 const platformLinks = document.querySelectorAll('.platform-link')
 const popup = document.getElementById('coming-soon-popup')
@@ -148,3 +149,5 @@ platformLinks.forEach(link => {
         }
     })
 })
+=======
+>>>>>>> origin/main

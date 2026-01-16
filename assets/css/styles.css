@@ -939,6 +939,7 @@ img {
         margin-bottom: 0;
     }
 }
+<<<<<<< HEAD
 /*=============== LOGOS ===============*/
 .logos__img {
   font-size: 2.5rem;
@@ -1042,3 +1043,5 @@ img {
   from { width: 0%; }
   to { width: 100%; }
 }
+=======
+>>>>>>> origin/main
