@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Volyx Browser - The Future of Browsing</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-global-line"></i> Volyx
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#community" class="nav__link">Community</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Navigate The Web <br> At Light Speed
+                    </h1>
+                    <h2 class="home__subtitle">
+                        Volyx Browser
+                    </h2>
+                    <h3 class="home__elec">
+                        <i class="ri-rocket-2-fill"></i> Next Gen Performance
+                    </h3>
+                </div>
+
+                <img src="assets/img/volyx_hero.png" alt="Volyx Browser" class="home__img">
+
+                <div class="home__car">
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-cpu-line"></i>
+                        </div>
+                        <h2 class="home__car-number">Low</h2>
+                        <h3 class="home__car-name">MEMORY</h3>
+                    </div>
+
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-speed-mini-fill"></i>
+                        </div>
+                        <h2 class="home__car-number">Fast</h2>
+                        <h3 class="home__car-name">SPEED</h3>
+                    </div>
+
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-shield-check-line"></i>
+                        </div>
+                        <h2 class="home__car-number">100%</h2>
+                        <h3 class="home__car-name">SECURE</h3>
+                    </div>
+
+                    <div class="home__button">
+                        <a href="#" class="button">DOWNLOAD BETA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <img src="assets/img/volyx_about.png" alt="" class="about__img">
+
+                    <div class="about__card">
+                        <h3 class="about__card-title">Qt6</h3>
+                        <p class="about__card-description">
+                            Built on the latest stable tech
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Engineered For <br> Efficiency & Power
+                    </h2>
+
+                    <p class="about__description">
+                        Experience a browser designed for the modern web.
+                        With built-in split view, AI integration, and a focus on
+                        low resource usage, Volyx keeps your productivity high
+                        and your frustration low.
+                    </p>
+
+                    <a href="#" class="button">Read Docs</a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== KEY FEATURES (Updated Popular) ====================-->
+        <section class="popular section" id="features">
+            <h2 class="section__title">
+                Features That Define <br> The Next Experience
+            </h2>
+
+            <!-- Changed class 'popular__' to 'features__' would require big css refactor, 
+                 so keeping classes but changing content for efficiency -->
+            <div class="popular__container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- Feature 1: Split View -->
+                    <article class="popular__card swiper-slide">
+                        <div class="popular__blob"></div>
+                        <h1 class="popular__title">Multitasking</h1>
+                        <h3 class="popular__subtitle">Split View</h3>
+
+                        <img src="assets/img/feature_split.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-layout-masonry-line"></i> Dual
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-drag-move-line"></i> Resize
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-focus-3-line"></i> Focus
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">Productivity</h3>
+                        <button class="button popular__button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </article>
+
+                    <!-- Feature 2: AI Integration -->
+                    <article class="popular__card swiper-slide">
+                        <div class="popular__blob"></div>
+                        <h1 class="popular__title">Intelligence</h1>
+                        <h3 class="popular__subtitle">AI Assistant</h3>
+
+                        <img src="assets/img/feature_ai.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-brain-line"></i> Smart
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-chat-3-line"></i> Chat
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-lightbulb-line"></i> Ideas
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">Integrated</h3>
+                        <button class="button popular__button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </article>
+
+                    <!-- Feature 3: Security -->
+                    <article class="popular__card swiper-slide">
+                        <div class="popular__blob"></div>
+                        <h1 class="popular__title">Protection</h1>
+                        <h3 class="popular__subtitle">Privacy Shield</h3>
+
+                        <img src="assets/img/feature_speed.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-shield-keyhole-line"></i> Safe
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-eye-off-line"></i> Private
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-lock-line"></i> Secure
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">Priority</h3>
+                        <button class="button popular__button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </article>
+
+                    <!-- Feature 4: Customization -->
+                    <article class="popular__card swiper-slide">
+                        <div class="popular__blob"></div>
+                        <h1 class="popular__title">Style</h1>
+                        <h3 class="popular__subtitle">Theming</h3>
+
+                        <img src="assets/img/feature_split.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-palette-line"></i> Dark
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-contrast-drop-line"></i> Neon
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-magic-line"></i> Auto
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">Personal</h3>
+                        <button class="button popular__button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </article>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== TECH SPECS (Updated Features) ====================-->
+        <section class="features section">
+            <h2 class="section__title">
+                Under The Hood
+            </h2>
+
+            <div class="features__container container grid">
+                <div class="features__group">
+                    <img src="assets/img/volyx_about.png" alt="" class="features__img">
+
+                    <div class="features__card features__card-1">
+                        <h3 class="features__card-title">Qt6</h3>
+                        <p class="features__card-description">Modern <br> Core</p>
+                    </div>
+
+                    <div class="features__card features__card-2">
+                        <h3 class="features__card-title">V8</h3>
+                        <p class="features__card-description">JS <br> Engine</p>
+                    </div>
+
+                    <div class="features__card features__card-3">
+                        <h3 class="features__card-title">Py</h3>
+                        <p class="features__card-description">Python <br> Power</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== EXTENSIONS / COMMUNITY (Updated Featured) ====================-->
+        <section class="featured section" id="community">
+            <h2 class="section__title">
+                Community & Plugins
+            </h2>
+
+            <div class="featured__filters">
+                <button class="featured__item active-featured" data-filter="all">
+                    <span>All</span>
+                </button>
+                <button class="featured__item" data-filter=".themes">
+                    <i class="ri-palette-line featured__icon"></i>
+                    <span class="featured__name">Themes</span>
+                </button>
+                <button class="featured__item" data-filter=".extensions">
+                    <i class="ri-plug-line featured__icon"></i>
+                    <span class="featured__name">Plugins</span>
+                </button>
+                <button class="featured__item" data-filter=".dev">
+                    <i class="ri-code-box-line featured__icon"></i>
+                    <span class="featured__name">Dev</span>
+                </button>
+            </div>
+
+            <div class="featured__container container grid">
+                <!-- Theme: Neon -->
+                <article class="featured__card mix themes">
+                    <div class="shape shape__smaller"></div>
+                    <h1 class="featured__title">Theme</h1>
+                    <h3 class="featured__subtitle">Cyberpunk Neon</h3>
+                    <img src="assets/img/feature_ai.png" alt="" class="featured__img">
+                    <h3 class="featured__price">Free</h3>
+                    <button class="button featured__button">
+                        <i class="ri-download-line"></i>
+                    </button>
+                </article>
+
+                <!-- Extension: AdBlock -->
+                <article class="featured__card mix extensions">
+                    <div class="shape shape__smaller"></div>
+                    <h1 class="featured__title">Plugin</h1>
+                    <h3 class="featured__subtitle">Ad Shield</h3>
+                    <img src="assets/img/feature_speed.png" alt="" class="featured__img">
+                    <h3 class="featured__price">Free</h3>
+                    <button class="button featured__button">
+                        <i class="ri-download-line"></i>
+                    </button>
+                </article>
+
+                <!-- Dev Tool: Debugger -->
+                <article class="featured__card mix dev">
+                    <div class="shape shape__smaller"></div>
+                    <h1 class="featured__title">Tool</h1>
+                    <h3 class="featured__subtitle">PyDebugger</h3>
+                    <img src="assets/img/feature_split.png" alt="" class="featured__img">
+                    <h3 class="featured__price">Pro</h3>
+                    <button class="button featured__button">
+                        <i class="ri-download-line"></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== OFFER ====================-->
+        <section class="offer section">
+            <div class="offer__container container grid">
+                <img src="assets/img/offer-bg.png" alt="" class="offer__bg">
+
+                <div class="offer__data">
+                    <h2 class="section__title offer__title">
+                        Ready To Upgrade <br> Your Web Experience?
+                    </h2>
+                    <p class="offer__description">
+                        Join the beta program today and be the first to experience
+                        the speed, security, and intelligence of Volyx.
+                    </p>
+
+                    <a href="#" class="button">
+                        Download Now
+                    </a>
+                </div>
+
+                <img src="assets/img/volyx_hero.png" alt="" class="offer__img">
+            </div>
+        </section>
+
+        <!--==================== TECH STACK LOGOS ====================-->
+        <section class="logos section">
+            <div class="logos__container container grid">
+                <div class="logos__content">
+                    <!-- Just text placeholders if logos fail, but we'll try to find some or key icons -->
+                    <i class="ri-google-fill logos__img" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+                <div class="logos__content">
+                    <i class="ri-windows-fill logos__img" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+                <div class="logos__content">
+                    <i class="ri-apple-fill logos__img" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+                <div class="logos__content">
+                    <i class="ri-android-fill logos__img" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+                <div class="logos__content">
+                    <i class="ri-ubuntu-fill logos__img" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-global-line"></i> Volyx
+                </a>
+                <p class="footer__description">
+                    The next generation browser <br>
+                    built for performance, privacy, <br>
+                    and productivity.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Browser</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Download</a></li>
+                    <li><a href="#" class="footer__link">Features</a></li>
+                    <li><a href="#" class="footer__link">Themes</a></li>
+                    <li><a href="#" class="footer__link">Extensions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Documentation</a></li>
+                    <li><a href="#" class="footer__link">Forums</a></li>
+                    <li><a href="#" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Follow us</h3>
+                <ul class="footer__social">
+                    <li><a href="#" target="_blank" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="footer__social-link"><i class="ri-twitter-line"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; Volyx Team. All rights reserved
+        </span>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
