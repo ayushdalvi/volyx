@@ -124,3 +124,27 @@ sr.reveal(`.about__data, .offer__img`, { origin: 'right' })
 sr.reveal(`.features__map`, { delay: 600, origin: 'bottom' })
 sr.reveal(`.features__card`, { interval: 300 })
 sr.reveal(`.featured__card, .logos__content, .footer__content`, { interval: 100 })
+/*=============== PLATFORM REDIRECT & POPUP ===============*/
+const platformLinks = document.querySelectorAll('.platform-link')
+const popup = document.getElementById('coming-soon-popup')
+const GITHUB_REPO = 'https://github.com/ayushdalvi/volyx.git'
+
+platformLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const platform = link.getAttribute('data-platform')
+        const url = link.getAttribute('data-url')
+
+        if (platform === 'Windows' && url) {
+            window.location.href = url
+        } else {
+            // Show popup
+            popup.classList.add('show-popup')
+            
+            // Redirect after 2.5s
+            setTimeout(() => {
+                popup.classList.remove('show-popup')
+                window.location.href = GITHUB_REPO
+            }, 2500)
+        }
+    })
+})

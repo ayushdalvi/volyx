@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Documentation - Volyx Browser</title>
+    <style>
+        .docs {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        .docs__container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 4rem;
+        }
+
+        .docs__sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .docs__nav-title {
+            font-size: var(--h3-font-size);
+            margin-bottom: 1.5rem;
+            color: var(--title-color);
+        }
+
+        .docs__nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .docs__nav-link {
+            color: var(--text-color);
+            transition: .3s;
+        }
+
+        .docs__nav-link:hover {
+            color: var(--first-color);
+            padding-left: 5px;
+        }
+
+        .docs__content {
+            background: var(--container-color);
+            padding: 3rem;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .docs__title {
+            font-size: var(--h1-font-size);
+            margin-bottom: 2rem;
+            color: var(--first-color);
+        }
+
+        .docs__section {
+            margin-bottom: 3rem;
+        }
+
+        .docs__subtitle {
+            font-size: var(--h2-font-size);
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .docs__text {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+            font-family: monospace;
+            color: var(--first-color);
+        }
+
+        pre {
+            background: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            color: #ccc;
+        }
+
+        @media screen and (max-width: 767px) {
+            .docs__container {
+                grid-template-columns: 1fr;
+            }
+
+            .docs__sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header scroll-header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="ri-global-line"></i> Volyx
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a
+                            href="https://mega.nz/file/6W5imbzQ#ixP3hctsiuGklxkCQD3cZXh3k4B_uVn7npzyM7xtt-g"
+                            class="nav__link">Download</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="docs section">
+            <div class="docs__container container">
+                <aside class="docs__sidebar">
+                    <h3 class="docs__nav-title">Quick Start</h3>
+                    <ul class="docs__nav-list">
+                        <li><a href="#installation" class="docs__nav-link">Installation</a></li>
+                        <li><a href="#features" class="docs__nav-link">Key Features</a></li>
+                        <li><a href="#shortcuts" class="docs__nav-link">Shortcuts</a></li>
+                        <li><a href="#troubleshooting" class="docs__nav-link">Troubleshooting</a></li>
+                    </ul>
+                </aside>
+
+                <div class="docs__content">
+                    <h1 class="docs__title">Documentation</h1>
+
+                    <section id="installation" class="docs__section">
+                        <h2 class="docs__subtitle">Installation</h2>
+                        <p class="docs__text">Installing Volyx is simple. Follow these steps to get started:</p>
+                        <pre><code>1. Download the installer from the home page.
+2. Run the .exe file (Windows 10/11 recommended).
+3. Follow the on-screen instructions.</code></pre>
+                    </section>
+
+                    <section id="features" class="docs__section">
+                        <h2 class="docs__subtitle">Key Features</h2>
+                        <h3 style="color: var(--first-color); margin-bottom: 0.5rem;">Split View</h3>
+                        <p class="docs__text">Maximize your productivity by viewing two tabs side-by-side. Simply
+                            right-click a tab and select <strong>"Split View"</strong>.</p>
+
+                        <h3 style="color: var(--first-color); margin-bottom: 0.5rem;">AI Integration</h3>
+                        <p class="docs__text">Volyx comes with a built-in AI assistant to help you summarize pages,
+                            write code, or answer questions without leaving your browser.</p>
+                    </section>
+
+                    <section id="shortcuts" class="docs__section">
+                        <h2 class="docs__subtitle">Shortcuts</h2>
+                        <p class="docs__text">Boost your speed with these essential hotkeys:</p>
+                        <ul class="docs__text">
+                            <li><code>Ctrl + T</code> - New Tab</li>
+                            <li><code>Ctrl + W</code> - Close Tab</li>
+                            <li><code>Ctrl + Shift + S</code> - Toggle Split View</li>
+                            <li><code>Ctrl + L</code> - Focus Address Bar</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container">
+            <span class="footer__copy">&#169; Volyx Team. All rights reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>
