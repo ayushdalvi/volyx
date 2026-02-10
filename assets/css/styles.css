@@ -939,7 +939,6 @@ img {
         margin-bottom: 0;
     }
 }
-<<<<<<< HEAD
 /*=============== LOGOS ===============*/
 .logos__img {
   font-size: 2.5rem;
@@ -952,12 +951,53 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .platform-link:hover .logos__img {
   color: var(--first-color);
   transform: translateY(-5px);
 }
+
+.platform-tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--container-color);
+  color: var(--white-color);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  font-size: var(--smaller-font-size);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  border: 1px solid var(--first-color);
+  z-index: 100;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+
+.platform-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--first-color);
+}
+
+.platform-link:hover .platform-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
 
 /*=============== POPUP ===============*/
 .popup {
@@ -1043,5 +1083,3 @@ img {
   from { width: 0%; }
   to { width: 100%; }
 }
-=======
->>>>>>> origin/main
